@@ -8177,7 +8177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1817659013}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSelectedTower
         m_Mode: 3
@@ -12038,7 +12038,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1817659013}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSelectedTower
         m_Mode: 3
@@ -13558,7 +13558,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1817659013}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSelectedTower
         m_Mode: 3
@@ -14946,9 +14946,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1817659011}
-  - component: {fileID: 1817659017}
-  - component: {fileID: 1817659010}
-  - component: {fileID: 1817659013}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -14956,39 +14953,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1817659010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817659009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3f2a090afab7e4092947a40db7b10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPoint: {fileID: 226629825}
-  path:
-  - {fileID: 251297119}
-  - {fileID: 2103581822}
-  - {fileID: 1597118116}
-  - {fileID: 1432517366}
-  - {fileID: 1833161995}
-  - {fileID: 1663576908}
-  - {fileID: 1782320327}
-  - {fileID: 247913453}
-  - {fileID: 1310199732}
-  - {fileID: 1072090990}
-  - {fileID: 484382779}
-  - {fileID: 1698999120}
-  - {fileID: 365725819}
-  - {fileID: 1366187651}
-  - {fileID: 722095377}
-  - {fileID: 1207366102}
-  - {fileID: 1861571200}
-  - {fileID: 806961388}
-  currency: 0
 --- !u!4 &1817659011
 Transform:
   m_ObjectHideFlags: 0
@@ -15004,51 +14968,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1817659013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817659009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0cbc315d9763bf4096ee01cf01db51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towers:
-  - name: Basic tank
-    cost: 100
-    prefab: {fileID: 1049239408305843446, guid: 64a10110abbb3a44f8941ffdffdca7a7, type: 3}
-  - name: Sniper tank
-    cost: 250
-    prefab: {fileID: 6973843883345519727, guid: ebcf9b13980f7814ab588fda29703976, type: 3}
-  - name: Strong turret
-    cost: 350
-    prefab: {fileID: 3563811028116158797, guid: 5d797e1bd0ac43b489f32e6758f03ee5, type: 3}
---- !u!114 &1817659017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817659009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 190ccde5db5e7a6458ba66febe2eea7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 5238293559354443362, guid: 6e79789f033574940b30d989164a5eb4, type: 3}
-  - {fileID: 1675394911236619152, guid: 0577f01c15d65dc409a08aa41d75b3bf, type: 3}
-  - {fileID: 4517002185830460437, guid: 1d89b33dacb03e946923815177b5b234, type: 3}
-  - {fileID: 5238140823905222600, guid: dceb3009ed6c2a040be9bf3188511a3b, type: 3}
-  - {fileID: 8677419727763187102, guid: db247ecdb21d7204588f3aa5fdddb39a, type: 3}
-  baseEnemies: 10
-  enemiesPerSecond: 0.1
-  timeBetweenWaves: 5
-  difficultyScalingFactor: 0.75
-  numEnemiesPerSpawn: 1
 --- !u!1001 &1826739733
 PrefabInstance:
   m_ObjectHideFlags: 0
