@@ -15260,7 +15260,7 @@ MonoBehaviour:
   - {fileID: 5238140823905222600, guid: dceb3009ed6c2a040be9bf3188511a3b, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
-  timebetweenWaves: 5
+  timebetweenWaves: 3
   difficultyScallingFactor: 0.75
 --- !u!114 &1817659014
 MonoBehaviour:
