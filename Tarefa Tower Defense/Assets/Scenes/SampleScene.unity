@@ -158,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 4747534}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.93, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5770,7 +5770,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.484427
+  orthographic size: 7.9732404
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5795,7 +5795,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.69, y: -1.27, z: -10}
+  m_LocalPosition: {x: -0.55, y: -0.51, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7947,7 +7947,7 @@ Transform:
   m_GameObject: {fileID: 741550343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.93, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14799,7 +14799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -3}
+  m_AnchoredPosition: {x: 119, y: 0}
   m_SizeDelta: {x: 213.3082, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795000491
@@ -14815,7 +14815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15254,9 +15254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 5238293559354443362, guid: 6e79789f033574940b30d989164a5eb4, type: 3}
-  - {fileID: 1675394911236619152, guid: 0577f01c15d65dc409a08aa41d75b3bf, type: 3}
-  - {fileID: 4517002185830460437, guid: 1d89b33dacb03e946923815177b5b234, type: 3}
-  - {fileID: 8677419727763187102, guid: db247ecdb21d7204588f3aa5fdddb39a, type: 3}
+  - {fileID: 5238293559354443362, guid: 8e48bf59806cf3746b10550c1fea77a0, type: 3}
+  - {fileID: 5238293559354443362, guid: 7c6aca76af1a10a4a8fc274bb7e1ed6b, type: 3}
+  - {fileID: 5238293559354443362, guid: 4ed30a9db25011b45bce08d70d627dfa, type: 3}
   - {fileID: 5238140823905222600, guid: dceb3009ed6c2a040be9bf3188511a3b, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
