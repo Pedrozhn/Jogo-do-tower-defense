@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7195244282765582250}
   - component: {fileID: 8934993883822244720}
   - component: {fileID: 1306747115463881763}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bullet strong fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2060463639
+  m_SortingLayerID: 1998903803
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: -831387205, guid: 55200c41dd47e3c4193937511b0ed05d, type: 3}
@@ -93,8 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4578022169203218654}
-  - component: {fileID: -285200018857334036}
-  - component: {fileID: -1787298025088431253}
   m_Layer: 0
   m_Name: Torret3
   m_TagString: Untagged
@@ -119,50 +117,6 @@ Transform:
   - {fileID: 5882521307879287935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-285200018857334036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3563811028116158797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e953e1159ab6e4191432bcdcf27831, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretRotationPoint: {fileID: 5882521307879287935}
-  targetingrange: 3
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletPrefab: {fileID: 7138648676298458160, guid: 6b8ba1fc6235fdc4491ac7b194d6f589, type: 3}
-  firingPoint: {fileID: 1788093124088711943}
-  rotationspeed: 200
-  bps: 1
---- !u!114 &-1787298025088431253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3563811028116158797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383c6c0b17de54141b9c47681cb233ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretRotationPoint: {fileID: 5882521307879287935}
-  targetingrange: 3
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletPrefab: {fileID: 7138648676298458160, guid: 6b8ba1fc6235fdc4491ac7b194d6f589, type: 3}
-  firingPoint: {fileID: 1788093124088711943}
-  rotationspeed: 200
-  bps: 1
-  burnDuration: 3
-  burnDamagePerSecond: 1
 --- !u!1 &4051308727903476609
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +251,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2060463639
+  m_SortingLayerID: 1998903803
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -595315535, guid: 55200c41dd47e3c4193937511b0ed05d, type: 3}

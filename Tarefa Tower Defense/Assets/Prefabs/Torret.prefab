@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284174091977091101}
-  - component: {fileID: 5894907898504284473}
+  - component: {fileID: 4315455130374690555}
   m_Layer: 0
   m_Name: Torret
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 6562682866030207328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5894907898504284473
+--- !u!114 &4315455130374690555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,18 +43,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1049239408305843446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e953e1159ab6e4191432bcdcf27831, type: 3}
+  m_Script: {fileID: 11500000, guid: bc25ffe128fe6714587be9142bf040f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretRotationPoint: {fileID: 6025473005611938356}
-  targetingrange: 4
+  turretRotationPoint: {fileID: 6562682866030207328}
+  targetingrange: 3
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   bulletPrefab: {fileID: 1419843104296201822, guid: 14eeaf5532e6f504a9ad70169739a345, type: 3}
-  firingPoint: {fileID: 4540071915398749790}
+  firingPoint: {fileID: 6025473005611938356}
   rotationspeed: 200
-  bps: 2
+  bps: 1
 --- !u!1 &1846726280631181772
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2060463639
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -1425643372, guid: 3715bef31a2abbe479e03370b1d42169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2060463639
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1629138093, guid: 3715bef31a2abbe479e03370b1d42169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
