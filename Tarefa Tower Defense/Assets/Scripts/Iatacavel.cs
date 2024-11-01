@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Iatacavel 
-
+// Interface que define um comportamento para entidades que podem atacar
+public interface Iatacavel
 {
-    void Atacar();    
-
+    // Método que deve ser implementado por classes que herdam esta interface
+    void Atacar();
 }

@@ -2,42 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour 
+public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance; 
+    // Instância estática do LevelManager para acesso global
+    public static LevelManager instance;
 
-    public Transform startPoint;
+    public Transform startPoint;  // Ponto de início para os inimigos ou torres
+    public Transform[] path;  // Array de pontos que definem o caminho dos inimigos
+    [SerializeField] public int currency;  // Quantidade de moeda do jogador
 
-    public Transform[] path;  
-    [SerializeField] public int currency;  
-
-    private void Awake()  
+    private void Awake()
     {
-        instance = this; 
+        // Garante que exista apenas uma instância do LevelManager e a define como acessível globalmente
+        instance = this;
     }
 
-    private void Start() 
+    private void Start()
     {
+        // Inicializa a quantidade de moeda do jogador
         currency = 500;
     }
 
-    public void IncreaseCurrency(int amount) 
+    // Método para aumentar a quantidade de moeda do jogador
+    public void IncreaseCurrency(int amount)
     {
-        amount = 50; 
-        currency += amount; 
+        amount = 50;  // Define um valor fixo para o aumento (ajustar se necessário)
+        currency += amount;  // Adiciona o valor ao total de moeda
     }
 
-    public bool SpendCurrency(int amount) 
+    // Método para gastar moeda, retorna true se a transação for bem-sucedida
+    public bool SpendCurrency(int amount)
     {
-        if (amount <= currency) 
+        // Verifica se o jogador tem moeda suficiente
+        if (amount <= currency)
         {
-            currency -= amount; 
-            return true; 
+            currency -= amount;  // Deduz o valor da moeda
+            return true;  // Transação bem-sucedida
         }
         else
         {
-            Debug.Log("You do not have enough to purchase this item"); 
-            return false; 
+            Debug.Log("You do not have enough to purchase this item");  // Mensagem de erro se não houver moeda suficiente
+            return false;  // Transação falhou
         }
     }
 }
