@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] protected float hitPoints = 2;
+    [SerializeField] private int currencyWorth = 50; 
 
-    // Update is called once per frame
-    void Update()
+    protected bool isDestroyed = false; 
+
+
+    public virtual void TakeDamage(float dmg)
     {
-        
+        hitPoints -= dmg; 
+        if (hitPoints <= 0 && !isDestroyed)
+        {
+            EnemySpawner.onEnemyDestroy.Invoke(); 
+            LevelManager.instance.IncreaseCurrency(1);
+            isDestroyed = true; 
+            Destroy(gameObject);
+        }
     }
 }
