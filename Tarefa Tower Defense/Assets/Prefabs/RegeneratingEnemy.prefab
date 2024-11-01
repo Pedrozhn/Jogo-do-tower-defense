@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2400998069529237815}
   - component: {fileID: 3796281012425546197}
-  - component: {fileID: 7010429738768721111}
-  - component: {fileID: 3221278052579269138}
+  - component: {fileID: 315136409337401321}
+  - component: {fileID: 204733498936207087}
   - component: {fileID: 1303532690948036213}
   - component: {fileID: 8867940963253648232}
   - component: {fileID: 8161450016743643503}
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7010429738768721111
+--- !u!114 &315136409337401321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,24 +98,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5238140823905222600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a058e8db1c5159943a2df266500a1a6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 3
---- !u!114 &3221278052579269138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238140823905222600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfab0c4637e856749b643973930a90f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e955cb76a908e84fa21741fe053f383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8161450016743643503}
   moveSpeed: 2
+--- !u!114 &204733498936207087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238140823905222600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181a09a8fb3404d4780822a504ff0257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 6
+  currencyWorth: 50
 --- !u!114 &1303532690948036213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 3
+  currencyWorth: 50
   regenerationRate: 1
   maxHitPoints: 5
 --- !u!58 &8867940963253648232
