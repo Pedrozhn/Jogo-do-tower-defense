@@ -1,18 +1,89 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour 
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("References")]
+    [SerializeField] private GameObject[] enemyPrefabs;
+
+    [Header("Attributes")]
+    [SerializeField] private int baseEnemies = 8; 
+    [SerializeField] private float enemiesPerSecond = 0.5f; 
+    [SerializeField] private float timebetweenWaves = 5f; 
+    [SerializeField] private float difficultyScallingFactor = 0.75f; 
+
+    [Header("Events")]
+    public static UnityEvent onEnemyDestroy = new UnityEvent(); 
+
+    private int currentwave = 1;
+    private float timesinceLastSpawn;
+    private int enemiesAlive;
+    private int enemiesLeftToSpawn;
+    private bool isSpawning = false; 
+
+    private void Awake() 
     {
-        
+        onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start() 
     {
-        
+        StartCoroutine(StartWave()); 
+    }
+
+    private void Update() 
+    {
+        if (!isSpawning) return; 
+
+        timesinceLastSpawn += Time.deltaTime; 
+
+       
+        if (timesinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
+        {
+            SpawnEnemy();
+            enemiesLeftToSpawn--; 
+            enemiesAlive++; 
+            timesinceLastSpawn = 0f; 
+        }
+
+   
+        if (enemiesLeftToSpawn == 0 && enemiesAlive == 0)
+        {
+            Endwave(); 
+        }
+    }
+
+    private void Endwave() 
+    {
+        isSpawning = false; 
+        timesinceLastSpawn = 0f;
+        currentwave++; 
+        StartCoroutine(StartWave()); 
+    }
+
+    private void EnemyDestroyed() 
+    {
+        enemiesAlive--;
+    }
+
+    private IEnumerator StartWave()
+    {
+        yield return new WaitForSeconds(timebetweenWaves); 
+        isSpawning = true; 
+        enemiesLeftToSpawn = EnemiesPerwave(); 
+    }
+
+    private void SpawnEnemy() 
+    {
+        GameObject prefabToSpawn = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)]; 
+        Instantiate(prefabToSpawn, LevelManager.instance.startPoint.position, Quaternion.identity); 
+    }
+
+    private int EnemiesPerwave() 
+    {
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentwave, difficultyScallingFactor)); 
     }
 }
