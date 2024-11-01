@@ -15231,12 +15231,15 @@ MonoBehaviour:
   - name: Basic Turret
     cost: 100
     prefab: {fileID: 1049239408305843446, guid: 64a10110abbb3a44f8941ffdffdca7a7, type: 3}
-  - name: Strong turret
-    cost: 350
+  - name: Sniper turret
+    cost: 250
     prefab: {fileID: 6973843883345519727, guid: ebcf9b13980f7814ab588fda29703976, type: 3}
+  - name: Strong Turret
+    cost: 350
+    prefab: {fileID: 3563811028116158797, guid: 5d797e1bd0ac43b489f32e6758f03ee5, type: 3}
   - name: Ice turret
     cost: 400
-    prefab: {fileID: 3563811028116158797, guid: 5d797e1bd0ac43b489f32e6758f03ee5, type: 3}
+    prefab: {fileID: 3030591959518633506, guid: 4e8d60171fc8d504f8e05473d16dd4a6, type: 3}
 --- !u!114 &1817659013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15251,6 +15254,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 5238293559354443362, guid: 6e79789f033574940b30d989164a5eb4, type: 3}
+  - {fileID: 1675394911236619152, guid: 0577f01c15d65dc409a08aa41d75b3bf, type: 3}
+  - {fileID: 4517002185830460437, guid: 1d89b33dacb03e946923815177b5b234, type: 3}
+  - {fileID: 8677419727763187102, guid: db247ecdb21d7204588f3aa5fdddb39a, type: 3}
+  - {fileID: 5238140823905222600, guid: dceb3009ed6c2a040be9bf3188511a3b, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
   timebetweenWaves: 5
