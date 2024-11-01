@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5949789547305812189}
   - component: {fileID: 4527507201546425505}
   - component: {fileID: 4561662191507804292}
-  - component: {fileID: 6996263425330147957}
+  - component: {fileID: 1405571355819780206}
   - component: {fileID: 232072334741459008}
-  - component: {fileID: 2582222642120866601}
+  - component: {fileID: 3158045164404523714}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -123,7 +123,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &6996263425330147957
+--- !u!114 &1405571355819780206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5238293559354443362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfab0c4637e856749b643973930a90f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e955cb76a908e84fa21741fe053f383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 232072334741459008}
@@ -164,7 +164,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2582222642120866601
+--- !u!114 &3158045164404523714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +173,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5238293559354443362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a058e8db1c5159943a2df266500a1a6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a09a8fb3404d4780822a504ff0257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
+  hitPoints: 5
+  currencyWorth: 50
